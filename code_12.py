@@ -11,7 +11,7 @@ def get_fibonacci_number_sequence(number):
         return [1]
     if number == 1:
         return [1,1]
-    start_sequence = [1,1]
+    start_sequence = [1]
     first = get_fibonacci_number(0)
     second = get_fibonacci_number(1)
     for i in range(2, number+1):
@@ -24,4 +24,4 @@ def get_fibonacci_number_sequence(number):
 
 if __name__ == "__main__":
     print(get_fibonacci_number(7))
-    print(get_fibonacci_number_sequence(5))
+    print(get_fibonacci_number_sequence(9))
